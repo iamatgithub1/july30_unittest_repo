@@ -44,7 +44,7 @@ class PIMPgTestClass(unittest.TestCase):
         hrm_pim_obj.add_employee(self.data_dict.get("employee_info").get("f_name"),
                                      self.data_dict.get("employee_info").get("m_name"),
                                      self.data_dict.get("employee_info").get("l_name"))
-        time.sleep(10)
+        time.sleep(30)
         take_screenshot(self.driver)
         hrm_pim_obj.verify_successful_addition_of_employee(self.data_dict.get("employee_info").get("f_name"), self.data_dict.get("employee_info").get("l_name"))
         take_screenshot(self.driver)
